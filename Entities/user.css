@@ -1,0 +1,22 @@
+namespace TwitterClone.Domain.Entities{
+    
+    
+    public class User {
+        
+        
+        private Guid _id ;
+        private string _firstname ;
+        private string _lastname ;
+        private strting _email; 
+    ;
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+    
+}
