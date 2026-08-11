@@ -6,6 +6,10 @@ namespace TwitterClone.Domain.Entities
         private string _firstName;
         private string _lastName;
         private string _email;
+        private string _createdAt; 
+        private DateTime _modifiedAt; 
+        private Guid _createdBy; 
+        
 
         public User()
         {
