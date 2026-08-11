@@ -1,18 +1,36 @@
-namespace DefaultNamespace;
+using System.Text ;
+using System.Threading.Tasks;
 
-
-public class Tweet
+namespace TwitterClone.Domain.Entities
 {
-    public string  Content { get;private set; }
 
-    public void AddContent(string content)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public class Tweet
     {
-        if (string.IsNullOrEmpty(content))
+        public string Content { get; private set; }
+
+        public void AddContent(string content)
         {
-            Content = string.Empty;
-            // we are done ....sob sikhe kaj korba tumi    
-            
-            //  khub  eeee important 
+            if (string.IsNullOrEmpty(content))
+            {
+                Content = string.Empty;
+                // we are done ....sob sikhe kaj korba tumi    
+
+                //  khub  eeee important 
+            }
         }
     }
-}
+} 
