@@ -9,11 +9,14 @@ namespace TwitterClone.Domain.Entities
         private string _createdAt; 
         private DateTime _modifiedAt; 
         private Guid _createdBy; 
+        private Guid _modifiedBy; 
         
 
         public User()
         {
             _id = Guid.NewGuid();
+            _createdAt = DateTime.UtcNow; 
+            
         }
 
         public Guid Id
