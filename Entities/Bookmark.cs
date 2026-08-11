@@ -2,5 +2,25 @@ namespace Twitter_Clone.Entities;
 
 public class Bookmark
 {
-    
+    private Guid _id;
+    private Guid _userId;
+    private Guid _tweetId;
+    private DateTime _createdAt;
+    private DateTime _modifiedAt;
+    private Guid _createdBy;
+    private Guid _modifiedBy;
+
+    public Bookmark()
+    {
+        _id = Guid.NewGuid();
+        _createdAt = DateTime.UtcNow;
+    }
+
+    public Guid Id => _id;
+    public Guid UserId => _userId;
+    public Guid TweetId => _tweetId;
+    public DateTime CreatedAt => _createdAt;
+    public DateTime ModifiedAt => _modifiedAt;
+    public Guid CreatedBy => _createdBy;
+    public Guid ModifiedBy => _modifiedBy;
 }
