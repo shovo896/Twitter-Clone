@@ -21,10 +21,10 @@ namespace TwitterClone.Domain.Entities
             
         }
 
-        public Guid Id
-        {
-            get { return _id; }
-        }
+        //public Guid Id
+       // {
+          //  get { return _id; }
+        //}
 
         public string FirstName
         {
