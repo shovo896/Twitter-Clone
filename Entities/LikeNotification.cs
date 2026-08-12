@@ -15,6 +15,12 @@ public class LikeNotification
         
         public Guid LikeByUserId { get; set; } 
         public User LikeByUser { get; set; }
+
+
+        public void AddMessage(string message)
+        {
+            Message = message; 
+        }
         
         
     }
