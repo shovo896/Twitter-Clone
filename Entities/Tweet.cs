@@ -1,3 +1,4 @@
+using System.Security.Cryptography.X509Certificates;
 using System.Text ;
 using System.Threading.Tasks;
 using Twitter_Clone.Entities;
@@ -15,8 +16,17 @@ namespace TwitterClone.Domain.Entities
         //private Guid _createdBy; 
         // private Guid _modifiedBy;
 
-        public Tweet(string content):base(Guid.NewGuid()) 
+        public Tweet(string content):base(Guid.NewGuid())
         {
+
+            Public User():base(Guid.NewGuid())
+            {
+                Content = content; 
+                
+                
+                
+                
+            }
             
         }
 
