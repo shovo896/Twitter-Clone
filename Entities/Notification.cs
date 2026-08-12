@@ -17,4 +17,10 @@ public class Notification :BaseEntity
         get { return _userId; } 
         set { _userId = value; }
     }
+
+    public string Type
+    {
+        get { return _type; } 
+        set { _type = value; } 
+    }
 }
