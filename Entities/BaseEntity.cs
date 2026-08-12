@@ -13,4 +13,14 @@ public class BaseEntity
        Id = Guid.NewGuid();
        CreatedAt = DateTime.UtcNow;
    }
+
+   //public string DescribeRecord
+  // {
+       
+   //}
+   public viod SetyModified()
+   {
+       ModifiedAt = DateTime.UtcNow;
+       ModifiedBy = ModifiedBy;
+   }
 }
