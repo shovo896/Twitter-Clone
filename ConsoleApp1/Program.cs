@@ -1,15 +1,8 @@
-﻿
+using System;
+using Twitter_Clone.Entities;
+using TwitterClone.Domain.Entities;
 
-
-
-
-
-
-var likeNotification = new LikeNotification
-{
-
-    id = 1,
-    UserId = 123,
-    TweetId = 4565,
-    createAt = DateTime.UtcNow
-}; 
+var user = new User();
+var likeNotification = new LikeNotification(user.Id);
+likeNotification.AddMessage("Someone liked your tweet.");
+Console.WriteLine(likeNotification.DescribeRecord());
