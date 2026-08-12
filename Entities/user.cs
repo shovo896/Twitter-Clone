@@ -4,14 +4,14 @@ namespace TwitterClone.Domain.Entities
 {
     public class User : BaseEntity 
     {
-        private Guid _id;
+       // private Guid _id;
         private string _firstName;
         private string _lastName;
         private string _email;
-        private string _createdAt; 
-        private DateTime _modifiedAt; 
-        private Guid _createdBy; 
-        private Guid _modifiedBy; 
+      //  private string _createdAt; 
+       // private DateTime _modifiedAt; 
+        //private Guid _createdBy; 
+       // private Guid _modifiedBy; 
         
 
         public User()
