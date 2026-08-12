@@ -16,4 +16,9 @@ public class LikeNotification : Notification
     {
         Message = message;
     }
+
+    public override string DescribeRecord()
+    {
+        return $"Notification Type:{Type} Message:{Message},IsRead:{IsRead},LikeByUserId:{LikeByUserId}";
+    }
 }
