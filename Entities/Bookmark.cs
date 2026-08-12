@@ -16,8 +16,16 @@ public class Bookmark
         _createdAt = DateTime.UtcNow;
     }
 
-    public Guid Id => _id;
-    public Guid UserId => _userId;
+    pubic  Guid Id 
+    {
+        get {return _id;}
+    }
+
+    public Guid UserId
+    {
+        get {return _userId;}
+        set {_userId = value;}
+    }
     public Guid TweetId => _tweetId;
     public DateTime CreatedAt => _createdAt;
     public DateTime ModifiedAt => _modifiedAt;
