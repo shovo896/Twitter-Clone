@@ -24,10 +24,10 @@ public class Notification : BaseEntity
         set => _type = value;
     }
 
-    protected string Message
+    public string Message
     {
         get => _message;
-        set => _message = value;
+        protected set => _message = value;
     }
 
     public bool IsRead
