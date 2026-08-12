@@ -6,7 +6,7 @@ namespace TwitterClone.Domain.Entities
     {
         {
 
-        public User() : base(Guid.NewGuid())
+        public User() : base(Guid.NewGuid())   // constructor chaining
         {
             
         }
@@ -21,7 +21,7 @@ namespace TwitterClone.Domain.Entities
        // private Guid _modifiedBy; 
         
 
-        public User()
+        
         {
             //_id = Guid.NewGuid();
             //_createdAt = DateTime.UtcNow; 
