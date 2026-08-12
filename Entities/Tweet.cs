@@ -15,14 +15,12 @@ namespace TwitterClone.Domain.Entities
         //private Guid _createdBy; 
         // private Guid _modifiedBy;
 
-
-        public Tweet(string content):base(Guid.NewGuid())
+        public Tweet(string content):base(Guid.NewGuid()) 
         {
-            //_id = Guid.NewGuid(); 
-             // _createdAt = DateTime.UtcNow;
-             _content = content; 
-             
+            
         }
+
+
         public string Content { get; private set; }
 
         public void AddContent(string content)
