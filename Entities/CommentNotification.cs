@@ -1,20 +1,16 @@
 namespace Twitter_Clone.Entities;
 
-public class CommentNotification
+public class CommentNotification : Notification
 {
-    public class CommentNotificationResponse
+    public CommentNotification(Guid commentByUserId) : base("Comment")
     {
-        public CommentNotificationResponse(Guid CommentByUserId) : base ("Comment")
-        {
-            CommentByUserId = CommentByUserId; 
-            
+        CommentByUserId = commentByUserId;
+    }
 
-        }
-        public Guid CommentByUserId { get; set; } 
-        public void AddMessage(string message)
-        {
-            Message = message;
-        }
-        public string Message { get; set; }
+    public Guid CommentByUserId { get; set; }
+
+    public void AddMessage(string message)
+    {
+        Message = message;
     }
 }

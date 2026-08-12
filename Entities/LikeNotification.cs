@@ -2,26 +2,18 @@ using TwitterClone.Domain.Entities;
 
 namespace Twitter_Clone.Entities;
 
-public class LikeNotification
+public class LikeNotification : Notification
 {
-    public class LikeNotification : Notification
+    public LikeNotification(Guid likeByUserId) : base("Like")
     {
-        public  LikeNotification(Guid likeByUserId): base("like")
-        {
-            LikeByUserId = likeByUserId; 
-            
+        LikeByUserId = likeByUserId;
+    }
 
-        }
-        
-        public Guid LikeByUserId { get; set; } 
-        public User LikeByUser { get; set; }
+    public Guid LikeByUserId { get; set; }
+    public User? LikeByUser { get; set; }
 
-
-        public void AddMessage(string message)
-        {
-            Message = message; 
-        }
-        
-        
+    public void AddMessage(string message)
+    {
+        Message = message;
     }
 }

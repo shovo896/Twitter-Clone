@@ -2,53 +2,32 @@ using Twitter_Clone.Entities;
 
 namespace TwitterClone.Domain.Entities
 {
-    public class User : BaseEntity 
+    public class User : BaseEntity
     {
-        {
+       private string _firstName = string.Empty;
+       private string _lastName = string.Empty;
+       private string _email = string.Empty;
 
-        public User() : base(Guid.NewGuid())   // constructor chaining
-        {
-            
-        }
-        }
-       // private Guid _id;
-        private string _firstName;
-        private string _lastName;
-        private string _email;
-      //  private string _createdAt; 
-       // private DateTime _modifiedAt; 
-        //private Guid _createdBy; 
-       // private Guid _modifiedBy; 
-        
+       public User()
+       {
+       }
 
-        
-        {
-            //_id = Guid.NewGuid();
-            //_createdAt = DateTime.UtcNow; 
-            
-        }
+       public string FirstName
+       {
+           get => _firstName;
+           set => _firstName = value;
+       }
 
-        //public Guid Id
-       // {
-          //  get { return _id; }
-        //}
+       public string LastName
+       {
+           get => _lastName;
+           set => _lastName = value;
+       }
 
-        public string FirstName
-        {
-            get { return _firstName; }
-            set { _firstName = value; }
-        }
-
-       // public string LastName
-       // {
-      //      get { return _lastName; }
-     //       set { _lastName = value; }
-        }
-
-    // public string Email
-      //  {
-          //  get { return _email; }
-            //set { _email = value; }
-       // }
-    //}
+       public string Email
+       {
+           get => _email;
+           set => _email = value;
+       }
+    }
 }

@@ -1,13 +1,9 @@
-using Twitter Clone.Entities 
+namespace TwitterClone.Domain;
+
+public static class Encapsulation
 {
-    namespace TwitterClone.Domain 
+    public static void Run()
     {
-        public void Run()
-        {
-            // private diye data re protect koprtesi and public diye data acccess  kortesi 
-            
-            
-        }
-        
+        // Placeholder example used by the original project.
     }
 }

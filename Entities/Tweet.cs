@@ -1,47 +1,28 @@
-using System.Security.Cryptography.X509Certificates;
-using System.Text ;
-using System.Threading.Tasks;
 using Twitter_Clone.Entities;
 
 namespace TwitterClone.Domain.Entities
 {
-
-    public class Tweet :BaseEntity
+    public class Tweet : BaseEntity
     {
-        // private Guid _id;
         private Guid _userId;
-        private string _content; 
-            //private DateTime _createdAt; 
-       // private DateTime _modifiedAt;
-        //private Guid _createdBy; 
-        // private Guid _modifiedBy;
+        private string _content = string.Empty;
 
-        public Tweet(string content):base(Guid.NewGuid())
+        public Tweet(string content)
         {
-
-            Public User():base(Guid.NewGuid())
-            {
-                Content = content; 
-                
-                
-                
-                
-            }
-            
+           Content = content;
         }
 
+        public Guid UserId
+        {
+           get => _userId;
+           set => _userId = value;
+        }
 
         public string Content { get; private set; }
 
         public void AddContent(string content)
         {
-            if (string.IsNullOrEmpty(content))
-            {
-                Content = string.Empty;
-                // we are done ....sob sikhe kaj korba tumi    
-
-                //  khub  eeee important 
-            }
+           Content = string.IsNullOrEmpty(content) ? string.Empty : content;
         }
     }
-} 
+}
