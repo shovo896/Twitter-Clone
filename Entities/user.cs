@@ -1,6 +1,8 @@
+using Twitter_Clone.Entities;
+
 namespace TwitterClone.Domain.Entities
 {
-    public class User
+    public class User : BaseEntity 
     {
         private Guid _id;
         private string _firstName;
