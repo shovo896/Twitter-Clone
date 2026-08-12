@@ -7,8 +7,10 @@ public class Notification :BaseEntity
     private string _message;
     private bool isRead;
 
-    public Notification()
+    public Notification(string  notificationType):base(Guid.NewGuid())
     {
+        
+        
         
     }
 
@@ -23,4 +25,18 @@ public class Notification :BaseEntity
         get { return _type; } 
         set { _type = value; } 
     }
+
+    protected string Message
+    {
+        get { return _message; } 
+        set { _message = value; } 
+    }
+    public bool IsRead
+    {
+        get { return isRead; }
+        set { isRead = value; } 
+        
+    }
+    
+    
 }
