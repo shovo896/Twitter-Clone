@@ -18,7 +18,8 @@ public class LikeNotification : Notification
     }
 
     public override string DescribeRecord()
-    {
+    { 
+        var baseRecord = base.DescribeRecord(); 
         return $"Notification Type:{Type} Message:{Message},IsRead:{IsRead},LikeByUserId:{LikeByUserId}";
     }
 }
