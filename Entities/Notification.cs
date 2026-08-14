@@ -36,8 +36,14 @@ public class Notification : BaseEntity
         set => _isRead = value;
     }
 
-    public string GetMessgae()
+    public virtual string GetMessgae()
     {
         return _message;
-    }   
+    }
+
+    public override string GetMessage()
+    {
+        
+        
+    }
 }
