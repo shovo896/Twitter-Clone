@@ -35,4 +35,9 @@ public class Notification : BaseEntity
         get => _isRead;
         set => _isRead = value;
     }
+
+    public string GetMessgae()
+    {
+        return _message;
+    }   
 }
