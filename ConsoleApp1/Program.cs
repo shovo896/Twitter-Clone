@@ -8,4 +8,9 @@ likeNotification.AddMessage("Someone liked your tweet.");
 Console.WriteLine(likeNotification.DescribeRecord());
 
 var message=notification.GetMessage();
-Console.Writelog
+Console.Writelog("print notification")
+    
+    
+    
+    
+    //// privent devoloper to make the object 
